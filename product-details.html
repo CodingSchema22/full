@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+  <div class="logoe">
+    <h1>Falcon</h1>
+  </div>
+  <button class="menu-toggle" id="menu-open">☰</button>
+  <button class="menu-toggle" id="menu-close" style="display: none;">✖</button>
+  <div class="nav-menu" id="nav-menu">
+    <div class="nav-item"><a href="index.html">Home</a></div>
+    <div class="nav-item dropdown">
+      <a href="javascript:void(0)" onclick="toggleDropdown(this)">
+        Glasses <span class="dropdown-icon">▼</span>
+      </a>
+      <div class="dropdown-menu">
+        <a href="glasses.html">Men</a>
+        <a href="glasses.html">Women</a>
+        <a href="glasses.html">Child</a>
+      </div>
+    </div>
+
+    <div class="nav-item dropdown">
+      <a href="javascript:void(0)" onclick="toggleDropdown(this)">
+        Lens <span class="dropdown-icon">▼</span>
+      </a>
+      <div class="dropdown-menu">
+        <a href="lens.html">Men</a>
+        <a href="lens.html">Women</a>
+      </div>
+    </div>
+    <div class="nav-item"><a href="card.html">Contact</a></div>
+    <div class="nav-item"><a href="account.html">Account</a></div>
+  </div>
+     <a href="#" id="openCart">
+      <img src="cart.png" width="30px" height="30px" alt="Cart" />
+    </a>
+    <span class="cart-counter">0</span>
+</header>
+  <main class="product-detail">
+  <div class="product-images fade-in-element">
+    <img src="AmberGray.jpg" alt="Product Image" class="main-image" />
+    <div class="thumbnail-group">
+      <img src="AmberGray.jpg" alt="Thumb" />
+      <img src="AmberGray.jpg" alt="Thumb" />
+      <img src="AmberGray.jpg" alt="Thumb" />
+    </div>
+  </div>
+
+  <div class="product-info fade-in-element">
+    <h1 id="productName">Modern Optical Frame</h1>
+    <p class="price" id="productPrice">$49.99</p>
+    <div class="rating">
+      ★★★★☆ <span>(120 reviews)</span>
+    </div>
+    <p class="desc">
+      This stylish optical frame features lightweight material and a modern silhouette perfect for daily wear. Comes in multiple colors and sizes.
+    </p>
+
+    <div class="selector-group">
+      <p class="selector-label">Color:</p>
+      <div class="color-options">
+        <span class="color-swatch black active" data-color="Black"></span>
+        <span class="color-swatch silver" data-color="Silver"></span>
+        <span class="color-swatch blue" data-color="Blue"></span>
+      </div>
+    </div>
+
+    <div class="selector-group">
+      <p class="selector-label">Size:</p>
+      <div class="size-options">
+        <button class="size-btn active">S</button>
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+      </div>
+    </div>
+
+       <div class="shop-container">
+  <button class="shop-button" id="addToCartBtn">
+    <span class="shop-text">Add to cart</span>
+    <span class="shop-more"></span>
+  </button>
+    <button class="shop-button" id="buyNowBtn">
+    <span class="shop-text">Buy Now</span>
+    <span class="shop-more"></span>
+  </button>
+</div>
+  </div>
+     <div id="cartDrawer" class="cart-drawer">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <span id="closeCart" class="close-btn">&times;</span>
+  </div>
+
+  <!-- Cart Items Injected Here -->
+  <div class="cart-summary">
+
+  <div class="cart-footer">
+  </div>
+  </div>
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
